@@ -1,0 +1,3 @@
+[submodule "src/PoshTaskbarItem"]
+	path = src/PoshTaskbarItem
+	url = https://github.com/mdgrs-mei/PoshTaskbarItem.git
