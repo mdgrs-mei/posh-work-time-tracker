@@ -1,0 +1,24 @@
+name: Publish Release
+on:
+  push:
+    tags:
+      - "v*.*.*"
+
+jobs:
+  publish_release:
+    name: Publish Release
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v3
+        with:
+          submodules: true
+
+      - name: Create Zip
+        run: |
+          zip -r posh-work-time-tracker.zip ./ -x "*.git*" "*/Examples/*" "*/Tests/*"
+          
+      - name: Create Release
+        uses: ncipollo/release-action@v1
+        with:
+          artifacts: "posh-work-time-tracker.zip"
