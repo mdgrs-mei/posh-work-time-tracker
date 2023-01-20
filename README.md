@@ -17,7 +17,9 @@ https://user-images.githubusercontent.com/81177095/211255207-e1cf09f7-79b9-453c-
 ## Features
 
 - Records the time while the app is running excluding the time when the screen is locked
-- Notifies you of overtime by the progress bar and overlay badge on the taskbar icon
+- Notifies you of overtime by the progress bar and overlay badge on the taskbar icon  
+![overtime](https://user-images.githubusercontent.com/81177095/213721157-7042e52a-c9e5-451a-b191-761c9c068994.png)
+
 - Shows monthly reports of your work time
 
 ## Requirements
