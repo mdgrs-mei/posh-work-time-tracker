@@ -150,15 +150,10 @@ function IsWorking()
     (-not (IsScreenLocked)) -and (-not $script:isPaused)
 }
 
-Add-Type -MemberDefinition @'
-[DllImport("user32.dll")]
-public static extern IntPtr GetForegroundWindow();
-'@ -Namespace WorkTimeTracker -Name Win32
-
 function IsScreenLocked()
 {
-    $foregroundWindow = [WorkTimeTracker.Win32]::GetForegroundWindow()
-    $foregroundWindow -eq 0
+    $logonui = Get-Process -Name 'logonui' -ErrorAction Ignore
+    $null -ne $logonui
 }
 
 Main
