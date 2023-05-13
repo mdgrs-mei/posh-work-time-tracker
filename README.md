@@ -10,7 +10,7 @@
 
 This is also an example project that demonstrates how to use [*PoshTaskbarItem*](https://github.com/mdgrs-mei/PoshTaskbarItem) PowerShell module.
 
-https://user-images.githubusercontent.com/81177095/211255207-e1cf09f7-79b9-453c-a027-26ceae997910.mp4
+https://github.com/mdgrs-mei/posh-work-time-tracker/assets/81177095/3f7ad6d7-419c-4662-b644-7f12ad563242
 
 </div>
 
